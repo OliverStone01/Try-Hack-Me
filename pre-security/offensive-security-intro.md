@@ -1,0 +1,113 @@
+# 🚪 Room: Offensive Security Intro
+
+## 🎯 Objectives
+- Hack your first website (legally in a safe environment) and experience an ethical hacker's job.
+
+## 🛠️ Tools Used
+- Virtual machines
+- `Dirb` = brute-forses urls by taking a list of potential page names and testing to see if they exitst.
+
+## 💬 Summary
+- Used `dirb` to brute-force a bank application to see what hidden pages the bank had on their site.
+
+- Used the link to add funds to the bank account.
+
+-----
+
+## Notes
+
+Task1:
+
+The core of "Offensive Security" is breaking into computer systems, exploiting software bugs, and finding loopholes in an application to gain unauthorised access.
+
+The goal is to understand hacker tactics and imporve system defence.
+
+-----
+
+Task2:
+
+We use virtual machines to create simulated enviroments.
+
+In this room, there is a fake bank application  (FakeBank). 
+
+<img fakebank>
+
+Once I loaded the bank, I could see information about a bank account. Question 2 asked for the bank account number that was in plaintext on the account.
+
+-----
+
+Task3:
+
+Goal is to hack into FakeBank application and steal money. All I have is a bank account.
+
+Need to find hidden features in the application. To do this, we are using a tool called `dirb`.
+
+`dirb` brute-forses urls by taking a list of potential page names and testing to see if they exist.
+
+`dirb` is executed from the computes terminal. All you need to do is write `dirb` followed by the URL of the website.
+```
+dirb http://fakebank.thm
+```
+Output (taken from task):
+```
+ubuntu@tryhackme:~/Desktop$ dirb http://fakebank.thm
+
+-----------------
+DIRB v2.22
+By The Dark Raver
+-----------------
+
+START_TIME: Thu Apr 17 16:29:52 2025
+URL_BASE: http://fakebank.thm/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4610
+
+---- Scanning URL: http://fakebank.thm/ ----
++ http://fakebank.thm/bank-deposit (CODE:200|SIZE:4663)
++ http://fakebank.thm/images (CODE:301|SIZE:179)
+
+-----------------
+END_TIME: Thu Apr 17 16:29:59 2025
+DOWNLOADED: 4610 - FOUND: 2
+```
+Brakedown:
+- The first section tells us the `URL_BASE`. The url we gave `dirb`, the location of the wordlist, common page names that are tested.
+
+- The results with `+` are pages found.
+
+-----
+
+Task4:
+
+Following the link found in Task 3, took me to a service on the bank where I could add funds to an account by inputing the account number and amount to deposit.
+
+-----
+
+## Questions and Answers
+1. Which of the following options better represents the process where you simulate a hacker's actions to find vulnerabilities in a system?
+
+- Offensive security
+- Defensive security
+
+Answer: Offensive security
+
+-----
+
+2. What is your bank account number in the FakeBank web application?
+
+Answer: 8881
+
+-----
+
+3. Dirb should have found 2 hidden URLs. One of them is `http://fakebank.thm/images`. What is the other one?
+
+Answer: http://fakebank.thm/bank-deposit
+
+-----
+
+4. If your balance is now positive, a pop-up should appear with some green words in it. Input the green words as the answer to this question (all in uppercase):
+
+Answer: BANK-HACKED
