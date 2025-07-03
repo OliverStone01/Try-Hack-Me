@@ -109,7 +109,7 @@ The four majour phases of incident response:
 - **Post-incident Activity**:  
   After a successful recovery, a report is produced, and the lessons learned are shared to prevent future incidents.
 
-<img>
+<img src="/pre-security/introduction-to-cyber-security/assets/incident-response-diagram.png" alt="Incident response diagram" style="width:300px">
 
 **Malware Analysis**  
 `Malware` = Malicious software.
@@ -153,7 +153,7 @@ An IP Address is like a home address for you computer on the internet. It tells 
 
 I've loaded the site and it is a SIEM dashboard. The Instructions say "Inspect the alerts in your SIEM dashboard. Find the malicious IP address from the alerts, make a note of it, and then click on the alert to proceed."
 
-<img>
+<img src="/pre-security/introduction-to-cyber-security/assets/siem-dashboard.png" alt="SIEM Dashboard" style="width:300px">
 
 Below the charts is a "Alert Log". Second log down, the message reads "Unauthorized connection attempt detected from IP address 143.110.250.149 to port 22"
 
