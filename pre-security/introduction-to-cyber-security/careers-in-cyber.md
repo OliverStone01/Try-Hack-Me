@@ -4,10 +4,10 @@
 - Learn about diffrent careers in cyber.
 
 ## 🛠️ Tools Used
--
+- None
 
 ## 💬 Summary
--
+- Looked at the most common careers in cyber security.
 
 -----
 
