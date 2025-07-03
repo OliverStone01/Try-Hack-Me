@@ -7,7 +7,13 @@
 - IP scanner
 
 ## 💬 Summary
--
+- Defensive security
+- Security Operations Center (SOC)
+- Threat intelligence
+- Digital Forensics and incident response (DFIR)
+- Incident Response
+- Malware Analysis
+- Simulating a SIEM
 
 -----
 
@@ -109,7 +115,7 @@ The four majour phases of incident response:
 - **Post-incident Activity**:  
   After a successful recovery, a report is produced, and the lessons learned are shared to prevent future incidents.
 
-<img src="/pre-security/introduction-to-cyber-security/assets/incident-response-diagram.png" alt="Incident response diagram" style="width:300px">
+<img src="/pre-security/introduction-to-cyber-security/assets/incident-response-diagram.png" alt="Incident response diagram" style="width:400px">
 
 **Malware Analysis**  
 `Malware` = Malicious software.
