@@ -5,11 +5,10 @@
 
 ## 🛠️ Tools Used
 - Virtual machines
-- `Dirb` = brute-forses urls by taking a list of potential page names and testing to see if they exitst.
+- `DirB` = brute-forces URLs by taking a list of potential page names and testing to see if they exist.
 
 ## 💬 Summary
-- Used `dirb` to brute-force a bank application to see what hidden pages the bank had on their site.
-
+- Used `DirB` to brute-force a bank application to see what hidden pages the bank had on its site.
 - Used the link to add funds to the bank account.
 
 -----
@@ -20,31 +19,31 @@ Task1:
 
 The core of "Offensive Security" is breaking into computer systems, exploiting software bugs, and finding loopholes in an application to gain unauthorised access.
 
-The goal is to understand hacker tactics and imporve system defence.
+The goal is to understand hacker tactics and improve system defence.
 
 -----
 
 Task2:
 
-We use virtual machines to create simulated enviroments.
+We use virtual machines to create simulated environments.
 
-In this room, there is a fake bank application  (FakeBank). 
+In this room, there is a fake bank application (FakeBank). 
 
 <img fakebank>
 
-Once I loaded the bank, I could see information about a bank account. Question 2 asked for the bank account number that was in plaintext on the account.
+Once I loaded the bank, I could see information about a bank account. Question 2 asked for the bank account number that was in plain text on the account.
 
 -----
 
 Task3:
 
-Goal is to hack into FakeBank application and steal money. All I have is a bank account.
+Goal is to hack into the FakeBank application and steal money. All I have is a bank account.
 
-Need to find hidden features in the application. To do this, we are using a tool called `dirb`.
+Need to find hidden features in the application. To do this, we are using a tool called `DirB`.
 
-`dirb` brute-forses urls by taking a list of potential page names and testing to see if they exist.
+`DirB` brute-forces URLs by taking a list of potential page names and testing to see if they exist.
 
-`dirb` is executed from the computes terminal. All you need to do is write `dirb` followed by the URL of the website.
+`DirB` is executed from the computer’s terminal. All you need to do is write `DirB` followed by the URL of the website.
 ```
 dirb http://fakebank.thm
 ```
@@ -73,8 +72,8 @@ GENERATED WORDS: 4610
 END_TIME: Thu Apr 17 16:29:59 2025
 DOWNLOADED: 4610 - FOUND: 2
 ```
-Brakedown:
-- The first section tells us the `URL_BASE`. The url we gave `dirb`, the location of the wordlist, common page names that are tested.
+Breakdown:
+- The first section tells us the `URL_BASE`. The url we gave `DirB`, the location of the wordlist, and common page names that are tested.
 
 - The results with `+` are pages found.
 
@@ -82,7 +81,7 @@ Brakedown:
 
 Task4:
 
-Following the link found in Task 3, took me to a service on the bank where I could add funds to an account by inputing the account number and amount to deposit.
+Following the link found in Task 3, it took me to a service on the bank where I could add funds to an account by inputting the account number and amount to deposit.
 
 -----
 
