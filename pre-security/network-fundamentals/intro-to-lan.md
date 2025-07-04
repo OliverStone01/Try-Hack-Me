@@ -25,7 +25,7 @@
 
 #### Star Topology
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/star-topology.png" alt="Star topology example" style="width:300px">
 
 Devices are individually connected via a central networking devicee such as a switch or a hub. This topology is the most commonly found due to it's reliability and scalability despite the cost.
 
@@ -42,7 +42,7 @@ Devices are individually connected via a central networking devicee such as a sw
 
 #### Bus Topology
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/bus-topology.png" alt="Bus topology example" style="width:300px">
 
 This connection relies upon a single connection known as a `backbone cable`. 
 
@@ -59,7 +59,7 @@ This connection relies upon a single connection known as a `backbone cable`.
 
 #### Ring Topology
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/ring-topology.png" alt="Ring topology example" style="width:300px">
 
 Also known as token topology. Devices are connected directly to each other to form a loop. This uses very little cabling to connect each device. The data is sent from one device around the loop until it reaches the target device. A device will choose to send its data first over passing other data from one device to another. Data is only sent in one direction around the loop.
 
@@ -77,7 +77,7 @@ Also known as token topology. Devices are connected directly to each other to fo
 
 #### What is a switch?
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/switch-example.png" alt="Switch example" style="width:300px">
 
 Switches are dedicated network devices that are designed to aggregate multiple devices together using ethernet through the switches ports. Switches can be found in larger networks such as businesses and schools.
 
@@ -97,7 +97,7 @@ Both switches and routers can be connected to one another. Doing so increases th
 
 #### What is a Router?
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/router-example.png" alt="Router example" style="width:300px">
 
 Routers connect networks and pass data between them. It does this via routing.
 
@@ -175,7 +175,7 @@ The ARP message is broadcated to the network asking "What device has this IP add
 
 IP addresses can be assigned to a device manualy or automatically using a DHCP server. The device will send out a request (DHCP Discover) to if there is a DHCP server on the network. The DHCP server replies back with an IP Address the device could use (DHCP Offer). The device then sends a reply confirming it wants the offered IP Address (DHCP Request), and lastly the DHCP server sends back a reply acknowledging this has been complete called DHCP ACK.
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/dhcp.png" alt="DHCP example" style="width:300px">
 
 -----
 
