@@ -66,7 +66,7 @@ Also known as token topology. Devices are connected directly to each other to fo
 **Benefits:**
 - Low cost.
 - Easy to set up.
-- East to troubleshoot.
+- Easy to troubleshoot.
 - less prone to bottlenecks.
 
 **Disadvantages:**
