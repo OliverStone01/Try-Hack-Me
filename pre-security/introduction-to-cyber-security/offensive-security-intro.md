@@ -29,7 +29,7 @@ We use virtual machines to create simulated environments.
 
 In this room, there is a fake bank application (FakeBank). 
 
-<img fakebank>
+<img fakebank src="/pre-security/introduction-to-cyber-security/assets/fakebank.png" alt="Fakebank homepage" style="width:300px">
 
 Once I loaded the bank, I could see information about a bank account. Question 2 asked for the bank account number that was in plain text on the account.
 
@@ -82,6 +82,8 @@ Breakdown:
 Task4:
 
 Following the link found in Task 3, it took me to a service on the bank where I could add funds to an account by inputting the account number and amount to deposit.
+
+<img src="/pre-security/introduction-to-cyber-security/assets/add-funds.png" alt="Add funds on fake bank" style="width:300px">
 
 -----
 
