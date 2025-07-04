@@ -23,7 +23,7 @@
 
 -----
 
-#### Star Topology
+### Star Topology
 
 <img src="/pre-security/network-fundamentals/assets/star-topology.png" alt="Star topology example" style="width:300px">
 
@@ -40,7 +40,7 @@ Devices are individually connected via a central networking device such as a swi
 
 -----
 
-#### Bus Topology
+### Bus Topology
 
 <img src="/pre-security/network-fundamentals/assets/bus-topology.png" alt="Bus topology example" style="width:300px">
 
@@ -53,11 +53,11 @@ This connection relies upon a single connection known as a `backbone cable`.
 **Disadvantages:**
 - Because all data travels on the same cable, it is quickly prone to bottlenecking (causing the network to slow down).
 - Bottlenecking makes it difficult to troubleshoot where the issue is coming from.
-- Prone to redundancy (reliability).
+- Prone to redundancy (reliability) issues.
 
 -----
 
-#### Ring Topology
+### Ring Topology
 
 <img src="/pre-security/network-fundamentals/assets/ring-topology.png" alt="Ring topology example" style="width:300px">
 
@@ -75,7 +75,7 @@ Also known as token topology. Devices are connected directly to each other to fo
 
 -----
 
-#### What is a switch?
+### What is a switch?
 
 <img src="/pre-security/network-fundamentals/assets/switch-example.png" alt="Switch example" style="width:300px">
 
@@ -95,7 +95,7 @@ Both switches and routers can be connected to one another. Doing so increases th
 
 -----
 
-#### What is a Router?
+### What is a Router?
 
 <img src="/pre-security/network-fundamentals/assets/router-example.png" alt="Router example" style="width:300px">
 
@@ -107,7 +107,7 @@ Routing is useful when devices are connected by many paths.
 
 -----
 
-#### Practical
+### Practical
 
 Learn about the ways to break each topology and collect the flag at the end.
 
