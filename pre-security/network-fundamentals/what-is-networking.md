@@ -4,7 +4,7 @@
 - Begin learning the fundamentals of computer networking in this bite-sized and interactive module.
 
 ## 🛠️ Tools Used
--
+- Ping
 
 ## 💬 Summary
 -
@@ -39,7 +39,7 @@ The internet started to be used as a repository for storing and sharing informat
 
 The internet is a much larger version of this diagram:
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/network.png" alt="Network layout" style="width:300px">
 
 These smaller networks that make up the internet are called `Private network`. The networks connecting the private networks together are called `Public networks`.
 
@@ -62,7 +62,7 @@ although we can change our name, we are unable to change our fingerprints. In co
 
 An IP address is a way of identifying a host on a network for a period of time. Here is an IP address split up:
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/ip4-address.png" alt="Example of IPv4" style="width:350px">
 
 An IP address is a set of numbers (8-bits) that are divided into four octest. The value of each octet will summarise to be the IP address of the device on the network. This calculation is a technique known as `IP addressing & subnetting`.
 
@@ -88,7 +88,7 @@ To combat this increasing issue, a new version of IP address was created called 
 
 Here is an image comparing the two IP addresses:
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/ip-comparison.png" alt="IPv4 vs IPv6" style="width:300px">
 
 **MAC Addresses**
 
@@ -101,7 +101,7 @@ The MAC address is twelve-characters hexadecimal number (base 16) split into two
 - The first 6 characters represent the company that made the network interface.
 - The last 6 characters are unique numbers.
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/mac-address.png" alt="MAC address example" style="width:350px">
 
 MAC addresses can be faked by `spoofing`. Doing this will only break poorly implemented security designs. For example, if a firewall is configured to allow any communication going to and from a MAC address of an administrator. Then all you would need to do is spoof your MAC address to be the same.
 
@@ -130,7 +130,7 @@ ping (IP ADDRESS/WEBSITE URL)
 ```
 Here is an example from the room:
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/ping.png" alt="Ping example" style="width:300px">
 
 Using the deployable website, I had to ping the IP address `8.8.8.8`.
 
