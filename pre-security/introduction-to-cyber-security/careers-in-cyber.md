@@ -1,18 +1,18 @@
 # 🚪 Room: Introduction to cyber security
 
 ## 🎯 Objectives
-- Learn about diffrent careers in cyber.
+- Learn about different careers in cyber.
 
 ## 🛠️ Tools Used
 - None
 
 ## 💬 Summary
-- Looked at the most common careers in cyber security.
+- Looked at the most common careers in cybersecurity.
 
 -----
 
 #### Task 1 - Introduction
-There are many diffrent jobs within the security industy, from offensive to defensive.
+There are many different jobs within the security industry, from offensive to defensive.
 
 Why get a career in cyber:
 - **Exciting**: Work can include legally hacking systems or defending against cyber attacks.
@@ -23,34 +23,34 @@ Why get a career in cyber:
 
 #### Task 2 - Security Analyst
 
-Security Analyst are responsible for maintaing the security of an organisations data and preventing attacks. They explore and evaluate the network to find vulnerabilities and give recommendations to enginners.
+Security Analysts are responsible for maintaining the security of an organisation’s data and preventing attacks. They explore and evaluate the network to find vulnerabilities and give recommendations to engineers.
 
 **Responsibilities**
-- Working with stakeholders to analyse the cyber security throughout the company.
+- Working with stakeholders to analyse the cybersecurity throughout the company.
 - Compile ongoing reports about the safety of networks, documenting security issues and measures taken in response.
-- Develop security plans and research new attack tools and trends
+- Develop security plans and research new attack tools and trends.
 
 -----
 
 #### Task 3 - Security Engineer
 
-Security Enginners design, monitor, and maintain security controls, networks, and systems to help prevent cyber attacks.
+Security Engineers design, monitor, and maintain security controls, networks, and systems to help prevent cyber attacks.
 
 **Responsibilities**
 - Testing and screening security measures across software
-- Monitor networks and reports to update systems and mitigate vulerabilities.
+- Monitor networks and reports to update systems and mitigate vulnerabilities.
 - Identify and implement systems needed for optimal security.
 
 -----
 
 #### Task 4 - Incident Responder
 
-Identifies and mitigates attacks while an attacks are still unfolding. This includes creating plans, policies, and protocols. This is often a high preassure position. 
+Identifies and mitigates attacks while attacks are still unfolding. This includes creating plans, policies, and protocols. This is often a high-pressure position. 
 
 **Responsibilities**
 - Developing and adopting a thorough, actionable incident response plan.
-- Maintaining security best prctices and supporting incident response measures.
-- Post incident reporting and preparation for futer attacks.
+- Maintaining security best practices and supporting incident response measures.
+- Post-incident reporting and preparation for future attacks.
 
 -----
 
@@ -70,8 +70,8 @@ Responsible for using digital forensics to investigate incidents and crimes.
 Analyses all types of malware to learn more about how they work and what they do.
 
 **Responsibilities**
-- Carry out static analysis of malicious programs (reverse engineering)
-- Conduct dynamic analysis of malware by obsering their actions in a controlled enviroment.
+- Carry out static analysis of malicious programs (reverse engineering).
+- Conduct dynamic analysis of malware by observing their actions in a controlled environment.
 - Document and report all findings.
 
 -----
@@ -82,31 +82,21 @@ Responsible for testing technology products for security loopholes.
 
 **Responsibilities**
 - Conduct tests on computer systems, networks, and web-based applications.
-- Perform security assessments, audits, and analyse policies
+- Perform security assessments, audits, and analyse policies.
 - Evaluate and report on insights, recommending actions.
 
 -----
 
 #### Task 8 - Red Teamer
 
-Plays the role of an adversary, attacking an organisation and providing feedback from an enemies perspective.
+Plays the role of an adversary, attacking an organisation and providing feedback from an enemy’s perspective.
 
 **Responsibilities**
-- Emulate the role of a threat actor to uncover explotable vulnerabilities, maintaning access and avoid detection.
-- Access of the organisations security controls, threat inteligence, and incident response procedures.
-- Evaluate and report on insight, with actionable data for companies to avoid real-world instances.
+- Emulate the role of a threat actor to uncover exploitable vulnerabilities, maintaining access and avoiding detection.
+- Access to the organisation’s security controls, threat intelligence, and incident response procedures.
+- Evaluate and report on insights, with actionable data for companies to avoid real-world instances.
 
 -----
-
-
-
-
-
------
-
-## Questions and Answers
-
-
 
 
 
