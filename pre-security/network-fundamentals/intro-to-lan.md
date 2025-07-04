@@ -1,7 +1,7 @@
 # 🚪 Room: Intro to LAN
 
 ## 🎯 Objectives
-- Learn about some of teh technologies and designs that power private networks.
+- Learn about some of the technologies and designs that power private networks.
 
 ## 💬 Summary
 - Topologies
