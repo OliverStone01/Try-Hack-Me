@@ -12,10 +12,9 @@
 - Used the link to add funds to the bank account.
 
 -----
-
 ## Notes
 
-Task1:
+#### Task1:
 
 The core of "Offensive Security" is breaking into computer systems, exploiting software bugs, and finding loopholes in an application to gain unauthorised access.
 
@@ -23,7 +22,7 @@ The goal is to understand hacker tactics and improve system defence.
 
 -----
 
-Task2:
+#### Task2:
 
 We use virtual machines to create simulated environments.
 
@@ -35,7 +34,7 @@ Once I loaded the bank, I could see information about a bank account. Question 2
 
 -----
 
-Task3:
+#### Task3:
 
 Goal is to hack into the FakeBank application and steal money. All I have is a bank account.
 
@@ -79,7 +78,7 @@ Breakdown:
 
 -----
 
-Task4:
+#### Task4:
 
 Following the link found in Task 3, it took me to a service on the bank where I could add funds to an account by inputting the account number and amount to deposit.
 
