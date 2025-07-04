@@ -7,7 +7,12 @@
 - Ping
 
 ## 💬 Summary
--
+- What is networking
+- IP addresses
+- MAC addresses
+- What is the internet
+- Identifying devices on a network
+- Ping
 
 -----
 ## Notes
@@ -21,9 +26,9 @@ Networks can be found:
 - National power grid.
 - Postal systems.
 
-A network can be formed with as little as two devices to billions of devices. These devices can be your laptop, phone, cameras, and much more.
+A network can be formed with as few as two devices to billions of devices. These devices can be your laptop, phone, cameras, and much more.
 
-Networks are integrated into our everyday life from gathering weather data to sending messages. Networking is an essential concept in cybersecurity.
+Networks are integrated into our everyday lives, from gathering weather data to sending messages. Networking is an essential concept in cybersecurity.
 
 -----
 
@@ -31,7 +36,7 @@ Networks are integrated into our everyday life from gathering weather data to se
 
 The internet is one giant network that consists of many small networks.
 
-The first internet was within the `ARPANET` project in the late 1960s. The project was funded by the United States Defence Department. However, it wasn't until 1989 where the internet (WWW) we know now was invented by `Tim Berners-Lee`.
+The first internet was within the `ARPANET` project in the late 1960s. The project was funded by the United States Defence Department. However, it wasn't until 1989 that the internet (WWW) we know now was invented by `Tim Berners-Lee`.
 
 `WWW` = World wide web
 
@@ -41,21 +46,21 @@ The internet is a much larger version of this diagram:
 
 <img src="/pre-security/network-fundamentals/assets/network.png" alt="Network layout" style="width:300px">
 
-These smaller networks that make up the internet are called `Private network`. The networks connecting the private networks together are called `Public networks`.
+These smaller networks that make up the internet are called `private networks`. The networks connecting the private networks together are called `public networks`.
 
 -----
 
 #### Task 3 - Identifying devices on a network
 
-For devices to communicate and maintain order, devices must be able to identify and be identifiable on a a network.
+For devices to communicate and maintain order, devices must be able to identify and be identifiable on a network.
 
-devices are similar to humans in the sense that we have two ways of being identified:
+Devices are similar to humans in the sense that we have two ways of being identified:
 - Our name
 - Our fingerprints
 
-although we can change our name, we are unable to change our fingerprints. In computer's these are known as:
-- An IP address (Non-perminent).
-- A Media Access Control (MAC) Address. (Similar to a serial number)
+Although we can change our name, we are unable to change our fingerprints. In computers these are known as:
+- An IP address (non-permanent).
+- A Media Access Control (MAC) Address (similar to a serial number).
 
 **IP Addresses**
 `IP address` = Internet Protocol.
@@ -64,7 +69,7 @@ An IP address is a way of identifying a host on a network for a period of time. 
 
 <img src="/pre-security/network-fundamentals/assets/ip4-address.png" alt="Example of IPv4" style="width:350px">
 
-An IP address is a set of numbers (8-bits) that are divided into four octest. The value of each octet will summarise to be the IP address of the device on the network. This calculation is a technique known as `IP addressing & subnetting`.
+An IP address is a set of numbers (8 bits) that are divided into four octets. The value of each octet will summarise to be the IP address of the device on the network. This calculation is a technique known as `IP addressing and subnetting`.
 
 IP addresses can change from device to device but cannot be active simultaneously within the same network.
 
@@ -72,11 +77,11 @@ IP addresses follow a set of standards known as protocols.
 
 A public address is used to identify the device on the internet, while a private address is used to identify the device among other devices.
 
-Two devices on a private network will use their private IP addresses to communicate with each other. However, any data sent to the internet from either device will be identified by the same public IP address. This is because your data is sent to the router in your home for example and your data is transmited from there which has it own public IP address which is given to the device by your `ISP` at a monthly fee.
+Two devices on a private network will use their private IP addresses to communicate with each other. However, any data sent to the internet from either device will be identified by the same public IP address. This is because your data is sent to the router in your home, for example, and your data is transmitted from there, which has its own public IP address, which is given to the device by your `ISP` at a monthly fee.
 
 `ISP` = Internet Service Provider
 
-It was reported by Cisco (industry giant in networking) that it will become increasingly harder to get a public IP address that isnt already in use. This is because of as of 2021, there is estimated to be 50 Billion devices connected to the internet.
+It was reported by Cisco (an industry giant in networking) that it will become increasingly harder to get a public IP address that isn't already in use. This is because, of as of 2021, there are an estimated 50 billion devices connected to the internet.
 
 **IP address Version Types**
 
@@ -96,10 +101,10 @@ Devices on a network will have a physical network microchip found on the device'
 
 `MAC` = Media Access Control
 
-The MAC address is twelve-characters hexadecimal number (base 16) split into two's and seperated by a colon. These colons are known as separators.
+The MAC address is twelve-character hexadecimal number (base 16) split into two's and separated by a colon. These colons are known as separators.
 
-- The first 6 characters represent the company that made the network interface.
-- The last 6 characters are unique numbers.
+- The first six characters represent the company that made the network interface.
+- The last six characters are unique numbers.
 
 <img src="/pre-security/network-fundamentals/assets/mac-address.png" alt="MAC address example" style="width:350px">
 
@@ -112,19 +117,19 @@ Most common public places like these are where this issue is found:
 
 **Practical**
 
-The interactive lab simulates a hotel wifi network where you have to pay for the service. the router is not allowing Bob's packers to the website and placing them in the bin. But Alice's packets are going through fine becuase she has paid for the service. We have to change Bob's MAC address to the same as Alice's to complete the challenge.
+The interactive lab simulates a hotel WI-FI network where you have to pay for the service. The router is not allowing Bob's packets to reach the website and placing them in the bin. But Alice's packets are going through fine because she has paid for the service. We have to change Bob's MAC address to the same as Alice's to complete the challenge.
 
 -----
 
 #### Task 4 - Ping(ICMP)
 
-Ping is one of the most fundametal network tools avaialable. Ping uses `ICMP` Packets to determine the performance of a connection between devices.
+Ping is one of the most fundamental network tools available. Ping uses `ICMP` packets to determine the performance of a connection between devices.
 
 `ICMP` = Internet Control Message Protocol
 
-The measuring is done by sending `ICMP's echo` packet from one device, and listening for the `ICMP's echo` reply from the Target device.
+The measuring is done by sending an `ICMP's echo` packet from one device and listening for the `ICMP's echo` reply from the target device.
 
-Ping can be performed against devices on a network or on resources like websites. This tool is easy to use and comes pre-installed on operating systems such as linux and windows. The syntax for ping is:
+Ping can be performed against devices on a network or on resources like websites. This tool is easy to use and comes pre-installed on operating systems such as Linux and Windows. The syntax for ping is:
 ```
 ping (IP ADDRESS/WEBSITE URL)
 ```
