@@ -122,7 +122,7 @@ Learn about the ways to break each topology and collect the flag at the end.
 
 ### Task 2 - A primer on subnetting
 
-Subnetting is splitting up a network into smaller networks. For example, in a business, you may want to subnet these different departments:
+Subnetting is splitting up a network into smaller networks. For example, in a business, you may want to subnet these different departments:  
 - Accounting
 - Finance
 - Human Resources
