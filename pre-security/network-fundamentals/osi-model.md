@@ -22,7 +22,7 @@ One of the main benefits of the OSI model is that devices can have diffrent func
 
 The OSI model consists of seven layers, arranged from layer seven to layer one:
 
-<img>
+<img src="/pre-security/network-fundamentals/assets/osi-model.png" alt="OSI Model" style="width:300px">
 
 At every layer that data travels through, specific process take place, and pieces of information are added to the data. This is called `encapsulation`.
 
