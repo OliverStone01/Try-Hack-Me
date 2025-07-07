@@ -48,7 +48,7 @@ Here are some of the notable headers:
 
 ### Task 2 - TCP/IP (The three-way handshake)
 
-`TCP` = Transmission Control Protocol
+`TCP` = Transmission Control Protocol.
 
 TCP is another rule used in networking.
 
@@ -58,7 +58,7 @@ This protocol is very similar to the OSI model. TCP/IP protocol concists of four
 - Internet
 - Network interface
 
-Similarly to how the OSI model works, information is added to each layer of the TCP model as the piece of data (packet) traverses it. this process is known as encapsulation where the reverse of this process is decapsulation.
+Similarly to how the OSI model works, information is added to each layer of the TCP model as the piece of data (packet) traverses it. This process is known as encapsulation where the reverse of this process is decapsulation.
 
 One defining feature of TCP is that it is `connection-based`, which means that TCP must establish a connection between both device acting as a server before data is sent. This guarantees that any data sent will be received on the other end. 
 
@@ -70,12 +70,12 @@ Advantages of TCP:
 - Performs a lot more processes for reliability.
 
 Disadavantages of TCP:
-- Requires a reliable connection between the two devices. if one small chunk of data is not recieved, then the entire chunk of data cannot be used and must be re-sent.
+- Requires a reliable connection between the two devices. If one small chunk of data is not recieved, then the entire chunk of data cannot be used and must be re-sent.
 - A slow connection can bottleneck another device as the connection will be reserved on the other device the whole time.
 - Significantly slower than UDP because more computing has to be done.
 
 TCP packets contain various sections of information known as headers that are added from encapsulation:
-**Source Port**: The port opened by the sender to send the TCP packet from. this value is chosen randomly between 0-65535 that are not already in use.
+**Source Port**: The port opened by the sender to send the TCP packet from. This value is chosen randomly between 0-65535 that are not already in use.
 
 **Destination Port**: The port number that an application or service is running on the remote host (receiving data).
 
