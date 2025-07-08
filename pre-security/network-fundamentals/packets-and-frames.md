@@ -93,6 +93,14 @@ TCP packets contain various sections of information known as headers that are ad
 
 **Flag**: Determines how the packet should be handled by either device during the handshake. 
 
+The three way handshake. The term given to the process used to establish a connection between two devices.
+
+**Step 1 - SYN:**:
+This is the initial packet sent by a client. This packet initiates a connection and synchronises the two devices together.
+
+**Step 2 = SYN/ACK:**
+This packet is sent by the recieving device (server) to acknowledge the synchronisation attempt from the client.
+
 
 
 -----
