@@ -7,7 +7,9 @@
 -
 
 ## 💬 Summary
--
+- What are packets and frames
+- TCP/IP
+- Three-way handshake
 
 -----
 
