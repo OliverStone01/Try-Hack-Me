@@ -7,7 +7,7 @@
 
 ## 💬 Summary
 - What is DNS
-- Domain Hierachy
+- Domain Hierarchy
 - Record Types
 - Making a Request
 
@@ -19,11 +19,11 @@
 
 DNS provides a simple way for us to communicate with devices on the internet without needing to remember complex numbers. Much like a house has a unique address for sending mail directly to it, every computer on the internet has its own unique address. This is called an `IP address`.
 
-An IP address is made up of four octets ranging from `0-255` which looks like this:
+An IP address is made up of four octets ranging from `0-255`, which looks like this:
 ```
 104.26.10.229
 ```
-What a DNS does is set a name to this IP address so instead of needing to remeber the numbers, you can remeber `google.com` as an example instead.
+What a DNS does is set a name to this IP address, so instead of needing to remember the numbers, you can remember `google.com` as an example instead.
 
 -----
 
@@ -47,17 +47,17 @@ A TLD is the `.com` part of `Tryhackme.com`. There are two types of TLD:
 - gTLD = Generic Top Level
 - ccTLD = Country Code Top Level
 
-Historically, gTLD was meant to tell the user the domain names's purpose; for example, `.com` would be for commercial, `.org` for organisations, `.edu` for education, and `.gov` for goverment.
+Historically, gTLD was meant to tell the user the domain name’s purpose; for example, `.com` would be for commercial, `.org` for organisations, `.edu` for education, and `.gov` for government.
 
-Becuase there is such a domand there are now over 2000 TLD's [you can check out here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
+Because there is such a demand, there are now over 2000 TLDs [you can check out here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
 
 #### Second-level Domain
 
-In `Tryhackme.com` the `Tryhackme` part is what is known as the second-level domain. the second level domain is limited to 63 characters + TLD. You can use a-z 0-9 and hyphens (cannot start or end with hyphens).
+In `Tryhackme.com` the `Tryhackme` part is what is known as the second-level domain. the second-level domain is limited to 63 characters + TLD. You can use a-z, 0-9, and hyphens (cannot start or end with hyphens).
 
 #### Subdomain
 
-A subdomain sits on the left-hand side of the Second-level domain using a period to seperate the two. For example, in `admin.tryhackme.com` the `admin` is a subdomain. A subdomain has the same restrictions in length as a second-level domain. You can also have as many subdomains as you wish, as long as the total length is less that 253 characters.
+A subdomain sits on the left-hand side of the second-level domain using a period to separate the two. For example, in `admin.tryhackme.com` the `admin` is a subdomain. A subdomain has the same restrictions in length as a second-level domain. You can also have as many subdomains as you wish, as long as the total length is less than 253 characters.
 
 -----
 
@@ -75,19 +75,19 @@ DNS isn't just for websites. Multiple types of DNS records exist.
 
 ### Making a DNS request
 
-1. When you request a domain name, your computer checks if its in its local cache to see if you have previously searched for the address. If not, a request is made to your Recursive DNS Server.
+1. When you request a domain name, your computer checks if it's in its local cache to see if you have previously searched for the address. If not, a request is made to your Recursive DNS Server.
 
-2. A recursive DNS server is usually provided by your Internet Service Provider (ISP). This server also has a cache of recently looked up domain names. If the address is found localy, then it is sent back to your computer. Otherwise, a journey begins to find the correct answer, starting with the internet's root DNS servers.
+2. A recursive DNS server is usually provided by your Internet Service Provider (ISP). This server also has a cache of recently looked-up domain names. If the address is found locally, then it is sent back to your computer. Otherwise, a journey begins to find the correct answer, starting with the internet's root DNS servers.
 
-3. The root servers act as the DNS backbone of the internet. Their job is to redirect you to the correct Top Level domain server, depending on yuor request.
+3. The root servers act as the DNS backbone of the internet. Their job is to redirect you to the correct Top Level domain server, depending on your request.
 
 4. The TLD server holds records for where to find the authoritative server to answer the DNS request.
 
-5. An authoritative DNS server is responsible for storing the DNS records. This is where any changes to your domain would be changed. The address is then sent all the way back through all the servers with a TTL (Time to live) factor. This means you will need to repeat the process once the timer has run out.
+5. An authoritative DNS server is responsible for storing the DNS records. This is where any changes to your domain would be made. The address is then sent all the way back through all the servers with a TTL (Time to live) factor. This means you will need to repeat the process once the timer has run out.
 
 -----
 
-### Task 5 - Practicle
+### Task 5 - Practice
 
 Use the website to build requests to make DNS queries.
 
