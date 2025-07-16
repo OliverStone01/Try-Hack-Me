@@ -10,7 +10,9 @@
 - What are packets and frames
 - TCP/IP
 - Three-way handshake
-
+- Closing a TCP connection
+- UDP/IP
+- Ports 101
 -----
 
 ## Notes
