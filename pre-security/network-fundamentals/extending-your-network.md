@@ -7,31 +7,36 @@
 -
 
 ## 💬 Summary
--
+- Port forwarding
+- Firewalls
+- VPN basics
+- LAN Network Devices
+- Routers
+- Switches
 
 -----
 
 ### Task 1 - Introduction to Port Forwarding
 
-Port forwarding is an essential component in connecting applications and serverces to the internet. Without port forwarding, applications and services like web servers would only be available to devices within the same direct network.
+Port forwarding is an essential component in connecting applications and services to the internet. Without port forwarding, applications and services like web servers would only be available to devices within the same direct network.
 
-Port forwarding is configured at the router of a network.
+Port forwarding is configured on the router of a network.
 
 -----
 
 ### Task 2 - Firewalls 101
 
-A `firewall` is a device within a network responsible for detemining what traffic is allowed to enter and exit. A `firewall` can be thought of as a border security of a network.
+A `firewall` is a device within a network responsible for determining what traffic is allowed to enter and exit. A `firewall` can be thought of as a border security of a network.
 
 An administrator can configure a firewall to permit or deny traffic from entering or exiting a network based on:
 - Where the traffic is coming from.
 - Where the traffic is going to.
 - What port the traffic is for.
-- What protocol is the traffic using.
+- What protocol the traffic is using.
 
 Firewalls perform packet inspection to determine the answers to these questions.
 
-Firewalls come in all shapes and sizes. From dedicated hardware that can handle large amounts of data to resisdential routers or software such as Snort, firewalls can be catagorised into 2 to 5 categories.
+Firewalls come in all shapes and sizes. From dedicated hardware that can handle large amounts of data to residential routers or software such as Snort, firewalls can be categorised into two to five categories.
 
 Let's look at the two primary categories.
 ```
@@ -54,7 +59,7 @@ Stateful |  This firewall type consumes many resources as decision
          |  These firewalls are much dumber as they are only as effective
 Stateless|  as the rules that are defined.
          |
-         |  Howeverm these firewalls are great when receiving large
+         |  However these firewalls are great when receiving large
          |  amounts of traffic from a set of hosts (DDOS attack)
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 ```
@@ -70,7 +75,7 @@ Configure the firewall to prevent the malicious packets from reaching the web se
 
 `VPN` = Virtual Private Network
 
-A VPN allows devices on seperate networks to communicate securely by creating a dedicated path between each other over the internet (known as a tunnel). Devices connected within this tunnel form their own private network.
+A VPN allows devices on separate networks to communicate securely by creating a dedicated path between each other over the internet (known as a tunnel). Devices connected within this tunnel form their own private network.
 
 **Benefit**:
 - Allows networks in different geographical locations to be connected.
@@ -85,7 +90,7 @@ Technology |  Description
            |  Used by PPTP to allow for authentication and provide
     PPP    |  encryption of data.
 - - - - - -| - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-           |  Point-to-Point Tunneling Protocol allows the data from
+           |  Point-to-Point Tunnelling Protocol allows the data from
            |  PPP to travel and leave a network. Its easy to set up and
    PPTP    |  is supported by most devices. Weak encryption.
 - - - - - -| - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -99,9 +104,9 @@ Technology |  Description
 ### Task 5 - LAN Networking Devices
 
 #### What is a Router?
-A routers job is to connect networks and pass data between the networks. It does this using routing.
+A router's job is to connect networks and pass data between the networks. It does this using routing.
 
-Routing is the label given to the process of data travelling across networks. Routers create a path between networks for the data to travel on. Routers operate at `level 3` of the `OSI model`. They often have an interactive interface like a website so that administrators can configure various rules such as port forwarding and firewalls.
+Routing is the label given to the process of data travelling across networks. Routers create a path between networks for the data to travel on. Routers operate at `level 3` of the `OSI model`. They often have an interactive interface like a website so that administrators can configure various rules, such as port forwarding and firewalls.
 
 Routers are dedicated devices and do not perform the same function as switches.
 
@@ -116,7 +121,7 @@ A switch is a dedicated networking device that allows you to connect to multiple
 
 Switches can operate at both layer 2 and layer 3 of the OSI model. These are exclusive in the sense that layer 2 switches cannot operate at layer 3.
 
-Here is a layer 2 switch that forwards frames onto the connected devices using their MAC address.
+Here is a Layer 2 switch that forwards frames onto the connected devices using their MAC addresses.
 ```
 [Device 1]\
            \
@@ -124,9 +129,9 @@ Here is a layer 2 switch that forwards frames onto the connected devices using t
            /
 [Device 3}/
 ```
-Let's now look at layer 3 switches. These are a little more sophisticated than layer 2 as they can perform some of the responsibilites of a router. These switches will send frames to devices and route packets to other devices using the IP protocol.
+Let's now look at layer 3 switches. These are a little more sophisticated than layer 2 as they can perform some of the responsibilities of a router. These switches will send frames to devices and route packets to other devices using the IP protocol.
 
-`VLAN` = Virtual Local Area Network. Allows specific devices within a network to be virtually split up. Doing this means you can have two networks that can have an internet connections but are treated seperate from each other. This is commonly seen within a company where the sales team will have a network and the accounting team will have a network.
+`VLAN` = Virtual Local Area Network. It allows specific devices within a network to be virtually split up. Doing this means you can have two networks that can have an internet connection but are treated separately from each other. This is commonly seen within a company where the sales team will have a network and the accounting team will have a network.
 ```
  - - Sales - -
 |   [Device]  |
