@@ -1,4 +1,4 @@
-# 🚪 Room:
+# 🚪 Room: HTTP in detail
 
 ## 🎯 Objectives
 -
