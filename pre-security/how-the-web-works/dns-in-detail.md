@@ -3,8 +3,6 @@
 ## 🎯 Objectives
 - Learn how DNS works and how it helps you access internet services.
 
-## 🛠️ Tools Used
-
 ## 💬 Summary
 - What is DNS
 - Domain Hierarchy
