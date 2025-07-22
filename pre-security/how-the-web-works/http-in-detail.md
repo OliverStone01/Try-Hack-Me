@@ -31,6 +31,12 @@ There are two major components that make up a webiste:
 
 -----
 
+### Requests and Responses
+
+When you access a website, your browser will need to make requests to a web server for assets such as HTML, images
+
+-----
+
 ## Questions and Answers
 
 ### Task 1 
