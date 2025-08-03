@@ -4,7 +4,7 @@
 - Learn how DNS works and how it helps you access internet services.
 
 ## 💬 Summary
-- What is DNS
+- What is DNS 
 - Domain Hierarchy
 - Record Types
 - Making a Request
