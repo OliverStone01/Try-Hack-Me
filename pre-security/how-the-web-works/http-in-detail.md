@@ -172,19 +172,65 @@ These are headers that are returned to the client from the server after a reques
 
 Cookies are small piece of data that is stored on your computer. Cookies are saved when you receive a `Set-Cookie` header from a web server. Every further request you make, you'll send the cookie data back to the web server. Becuase HTTP is stateless (doesn't keep track of your previous requests), cookies can be used to remind the web server who you are, some personal settings for the website or whether you've been to the website before. Let's take a look at this an example HTTP request:
 ```
-GET /HTTP/1.1                                  The client requests
-Host: cookies.thm                        <---  the webpage from
-User-Agent: xxxx                               http://cookies.thm
+// The client requests the webpage from http://cookies.thm
+GET /HTTP/1.1.
+- - - - - - - - - - -
+Host: cookies.thm
+User-Agent: xxxx
 
+// The server responds back with a simple webpage with a form asking for the users name.
+- - - - - - - - - - -
 HTTP/1.1 200 OK
-Server: nginx/1.15.8                           The server responds
-Date: Wed, 14 Apr 2021 09:08:19 GMT            back with a simple
-Content-Type: text/html; charset=UTF-8   <---  webpage with a form
-                                               asking for the users
-HTML DATA...                                   name
+Server: nginx/1.15.8
+Date: Wed, 14 Apr 2021 09:08:19 GMT
+Content-Type: text/html; charset=UTF-8
+
+HTML DATA...
+
+// The client sends back the form with the name set to adam.
+- - - - - - - - - - -
+POST/ HTTP1.1
+Host: cookies.thm
+User-Agent: xxxx
+Content-Type: application/x-wwwform-urlencoded
+Content-Length: 9
+
+name=adam
 
 
+// The server responds with a Set-Cookie header telling the client to save the data name=adam.
+- - - - - - - - - - -
+HTTP/1.1 200 OK
+Server: nginx/1.15.8
+Date: Wed, 14 Apr 2021 09:08:19 GMT
+Set-Cookie: name=adam
+Content-Type: text/html; charset=UTF-8
 
+HTML DATA...
+
+// On the next and every further request the clients sends the cookie data back to the server.
+- - - - - - - - - - - -
+GET/HTTP/1.1
+Host: cookies.thm
+User-Agent: xxxx
+Cookie: name=adam
+
+// The server then sees the cookie data and instead of displaying the form it displays a welcome back message instead.
+- - - - - - - - - - - -
+HTTP/1.1 200 OK
+Server: nginx/1.15.8
+Date: Wed, 14 Apr 2021 09:08:19 GMT
+Content-Type: text/html; charset=UTF-8
+
+<html><body>Welcome back adam</body></html>
+
+```
+
+Cookies can be used for many purposes but are most are used for website authentication. The cookie value won't usually be a clear-text string, instead it will be a token (unique secret code that isn't easily guessable).
+
+### Viewing your cookie
+
+You can view what cookies your browser is sending to a website using developer tools. Open the Network tab and you will see a list of all the resources the browser has requested.
 
 -----
 
@@ -289,6 +335,37 @@ Answer = Host
 
 ### Task 6
 
+**q1.** Which header is used to save cookies to your computer?
 
+Answer = Set-Cookie
 
 -----
+
+### Task 7
+
+**q1.** Make a GET request to /room page
+
+Answer =  THM{YOU'RE_IN_THE_ROOM}
+
+
+**q2.** Make a GET request to /blog page and set the id parameter to 1
+
+Answer = THM{YOU_FOUND_THE_BLOG}
+
+
+**q3.** Make a DELETE request to /user/1 page
+
+THM{USER_IS_DELETED}
+
+
+**q4.** Make a PUT request to /user/2 page with the username parameter set to admin
+
+Answer = THM{USER_HAS_UPDATED}
+
+
+**q5.** Make a POST request to /login page with the username of thm and a password of letmein
+
+Answer = THM{HTTP_REQUEST_MASTER}
+
+-----
+
