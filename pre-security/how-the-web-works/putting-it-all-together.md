@@ -50,8 +50,36 @@ A WAF sits between your web request and the web server; its purpose is to protec
 
 ### Task 3 - How web servers work
 
+#### What is a web server
 
+A web server is a software thats listening for incoming connections and then utilises the HTTP protocol to deliver web content to its client. Some of the most common web server software is `Apache`, `Nginx`, `IIS`, and `NodeJS`. A web server delivers files from what's called its root directory, which is defined in the software settings. 
 
+#### Virtual Hosts
+
+Web servers can host multiple websites with diffrent domain names; to achieve this, they use virtual hosts. The web server software checks the hostname being requested from the HTTP headers and matches that against its virtual hosts (virtual hosts are text-based configuration files). If it finds a match, the correct website will be provided. If not match is found, the default website will be provided instead.
+
+Virtual hosts can have their root directory mapped to different locations on the hard drive. For example, `one.com` being mapped to /var/www/website_one, and `two.com` being mapped to /var/www/website_two
+
+There is no limit to the number of diffrent websites you can host on a web server.
+
+#### Static Vs Dynamic content
+
+Static content is content that never changes. Common examples are pictures, javascript, CSS, etc., but can also include HTML that never changes. These are files that are directly served from the webserver with no changes made to them.
+
+Dynamic content is content that could change with different requests. An example of dynamic content would be a blog. The homepage of the blog will show you the latest entry. If a new entry is created, then the homepage needs to display the latest entry. 
+
+These changes to what you end up seeing are done on the `backend` with the use of programming and scripting languages. It is called `backend` because it is all happening behind the sceens. 
+
+#### Scripting and backend languages
+
+There's not much of a limit to what a backend language can achieve, and these are what make a webiste interactive to the user. Some of these languages are:
+- PHP
+- Python
+- Ruby
+- NodeJS
+- Perl
+
+These languages can interact with dabases, call external services, process data from the user, and more.
 
 -----
 
@@ -85,7 +113,29 @@ Answer = WAF
 
 ### Task 3 
 
+**q1.** What does web server software use to host multiple sites?
 
+Answer = Virtual Hosts
+
+
+**q2.** What is the name for the type of content that can change?
+
+Answer = Dynamic
+
+
+**q3.** Does the client see the backend code? Yay/Nay
+
+Answer = Nay
+
+-----
+
+### Task 4
+
+**q1.** Flag
+
+Answer = THM{YOU_GOT_THE_ORDER}
+
+-----
 
 
 
