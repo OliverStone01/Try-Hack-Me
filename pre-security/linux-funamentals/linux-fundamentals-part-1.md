@@ -31,7 +31,17 @@ Welcome to the first part of the "Linux Fundamentals" room series. You're most l
 
 #### Where is Linux used
 
-It's fair to sa
+It's fair to say that linux is a lot more intimidating to approach than Operating Systems (OS) such as Windows. Both variants have their own advantages and disadvantages. For example, Linux is considerably much more lightweight and you'd be suprised to know that there's a good chance you've used Linux in some form or another every day! Linux powers things like:
+- Websites you visit
+- Car entertainment/control panels
+- Point of sale (PoS) systems such as checkout tills.
+- Critical infrastructure such as traffic controllers.
+
+#### Flavours of Linux
+
+The name `Linux` is an umbrella term for multiple OS's that are based on UNIX (another operating systems). Thanks to Linux being open-source, varients of Linux come in all shapes and sizes - suited best for what the system is being used for.
+
+For example, Ubuntu & Debian are some of the more commonplace distributions of Linux because it is so extensive. r
 
 
 
