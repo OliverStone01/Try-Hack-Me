@@ -157,7 +157,61 @@ Here's something important for me to do later!
 
 #### Finding out the full path to our current working directory (pwd)
 
+It is very easy to lose track of where you are on the filesystem. To combat this, we can use the `pwd` to print the working directory.
+```
+tryhackme@linux1:~/Documents$ pwd
+/home/ubuntu/Documents
+```
 
+-----
+
+### Task 6 - Searching for files
+
+To save time, we can search an entire system by using the `find` command.
+
+#### Using find
+
+Here is a list of directories available:
+```
+tryhackme@linux1:~$ ls
+Desktop Documents Pictures folder1
+```
+
+Assuming we know the name of the file (in this case `passwords.txt`). We can use `find` liek this:
+```
+tryhackme@linux1:~$ find -name passwords.txt
+./folder1/passwords.txt
+```
+
+What if you don't know the name of the file? Or maybe you want to seach for all files that have the extention of `.txt`. What we can do is use `*` as a placeholder like this:
+```
+tryhackme@linux1:~$ find -name *.txt
+./folder1/passwords.txt
+./Documents/todo.txt
+```
+
+### Using Grep
+
+The `grep` command allows us to search the contents of files for specific values that we are looking for.
+
+For this example, we are first going to use the command `wc` to count the amount of entries in `access.log`.
+```
+// Using wc to count the number of entries in access.log
+tryhackme@linux1:~$ wc -l access.log
+244 access.log
+```
+
+We are now going to use `grep` to search the contents of the file for everything the ip address `81.143.211.90` has visited.
+```
+tryhackme@linux1:~$ grep "81.143.211.90" access.log
+81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200 417 "-" "Mozilla/5.0 (Linux; Android 7.0; Moto G(4))"
+```
+
+-----
+
+### Task 7 - An introduction to shell operators
+
+Here are a few operators:
 
 
 -----
@@ -202,10 +256,41 @@ Answer = tryhackme
 
 -----
 
+### Task 5
+
+**q1.** On the Linux machine that you deploy, how many folders are there?
+
+Answer = 4
 
 
+**q2.** Which directory contains a file? 
+
+Answer = folder4
 
 
+**q3.** What is the contents of this file?
+
+Answer = Hello World
+
+
+**q4.** Use the cd command to navigate to this file and find out the new current working directory. What is the path?
+
+Answer = /home/tryhackme/folder4
+
+-----
+
+### Task 6
+
+**q1.** Use grep on "access.log" to find the flag that has a prefix of "THM". What is the flag?
+
+Answer = THM{ACCESS}
+
+
+**q2.** And I still haven't found what I'm looking for!
+
+Answer = No answer needed
+
+-----
 
 
 
