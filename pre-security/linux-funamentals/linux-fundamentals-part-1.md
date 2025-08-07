@@ -212,10 +212,48 @@ tryhackme@linux1:~$ grep "81.143.211.90" access.log
 ### Task 7 - An introduction to shell operators
 
 Here are a few operators:
+```
+Symbol/Operator  |  Description
+- - - - - - - - -|- - - - - - - - - - - - - - - - - - - - - -
+&                |  Run commands in the background
+- - - - - - - - -|- - - - - - - - - - - - - - - - - - - - - -
+&&               |  Combine multiple commands together
+- - - - - - - - -|- - - - - - - - - - - - - - - - - - - - - -
+>                |  Redirector - use the output as the input
+- - - - - - - - -|- - - - - - - - - - - - - - - - - - - - - -
+>>               |  Same as > but appends instead of replacing
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+```
 
+#### Operator &
+
+This allows us to run commands in the background. For example, say we want to copy a large file. This would take a long time and leave us unable to do anything else until its complete.
+
+Using the `&` operator allows us to execute the command and let it run in the background while we execute other commands.
+
+
+#### Operator &&
+
+We can use `&&` to run a list of commands. For example `command1 && command2`. It is worth noting that `command2` will only run if `command1` was successful.
+
+
+#### Operator >
+
+This operator is what's known as an output redirector. What this means is we take the output of one command and use that elsewehere.
+
+What we can do, for example, is create a file with the message inside as "hey". We can use the echo and the `>` operator to redirect the result of echo into the file:
+```
+tryhackme@linux1:~$ echo hey > welcome
+```
+
+#### Operator >>
+
+This operator is also a redirector like the previous operator (>). But, what makes this operator diffrent is that rather than overwritting the current data in the file each time, we can use this operator to append to the file:
+```
+tryhackme@linux1:~$ echo hello >> welcome
+```
 
 -----
-
 
 ## Questions and Answers
 
@@ -291,6 +329,49 @@ Answer = THM{ACCESS}
 Answer = No answer needed
 
 -----
+
+### Task 7
+
+**q1.** If we wanted to run a command in the background, what operator would we want to use?
+
+Answer = &
+
+
+**q2.** If I wanted to replace the contents of a file named "passwords" with the word "password123", what would my command be?
+
+Answer = echo password123 > passwords
+
+
+**q3.** Now if I wanted to add "tryhackme" to this file named "passwords" but also keep "passwords123", what would my command be
+
+Answer = echo tryhackme >> passwords
+
+
+**q4.** Now use the deployed Linux machine to put these into practice
+
+Answer = No answer needed
+
+-----
+
+### Task 8
+
+**q1.** I'll have a play around!
+
+Answer = No answer needed
+
+-----
+
+### Task 9
+
+**q1.** Terminate the machine deployed in this room from task 3. 
+
+Answer = No answer needed
+
+
+**q2.** Join Linux Fundamentals Part 2!
+
+Answer = No answer needed
+
 
 
 
