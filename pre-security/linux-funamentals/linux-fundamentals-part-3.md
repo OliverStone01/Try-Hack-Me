@@ -109,6 +109,148 @@ scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
 
 #### Serving files from your host - WEB
 
+Ubuntu machines come pre-packaged with python3. Python provides a lightweight and easy-to-use module called "HTTPServer". This module turns your computer into a quick and easy web server that you can use to serve your own files, where thry can then be downloaded by another computer using the commands `curl` and `wget`.
+
+The server will serve the files from the directory where you run the command. To start the module, all you need to do is run `python3 -m http.server` in the terminal you wish to use. 
+
+In the below example, we are serving from a directory called `webserver`, which has a single file names `file`.
+```
+tryhackme@linux3:/webserver# python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+```
+
+Now we can use `wget` to downlaod the file using the MACHINE_IP address and the name of the file, and the port that the server is running on:
+```
+tryhackme@mymachine:~# wget http://MACHINE_IP:8000/myfile
+```
+
+One issue with this module is that you have no way of indexing. This means you must know the name and location of the file you wish to use. This is why `updog` is more commonly used. `updog` is a more advanced yet lightweight webserver.
+
+-----
+
+### Task 5 - Processes 101
+
+Processes are the programs that are running on your machine. They are managed by the kernal, where each process has an ID associated with it, known as a `PID` (Process ID). The PID increments for the order in which the process starts. For example, the 60th process will have a PID of 60.
+
+#### Viewing Processesr
+
+We can use the `ps` command to provide a list of the running processes as our user's session and some additional information such as it's status code, the session that is running it, how much usage time of the CPU it is using, and the name of the actual program or command that is being executed.
+
+To see other processes run by other users and those that don't run from a session (System processes), all we need to do is provide `aux` to the `ps` command like this `ps aux`.
+
+The `top` command gives you real-time statistic about the processes running on your system instead of a one-time view. To refresh the current rows, you can use the arrows.
+
+
+#### Managing processes
+
+You can send signals to terminate processes by using the `kill` command, followed by the PID numbers. For example, `kill 1337`. Here are some other signals we can send tot a process:
+
+- SIGTERM - Kill the process, but allow it to do some cleanup tasks first.
+- SIGKILL - Kill the process - doesn't do any cleanup after
+- SIGSTOP - Stop/Suspend a process
+
+
+#### How do processes start?
+
+The Operating system uses `namespaces` to split up the resources available on the computer to processes. Each slice provides a certain amount of processing power for those processes.
+
+Namespaces are great for security as it is a way of isolating processes from another - only those in the same namespace will be able to see each other.
+
+
+#### Getting Processes/Services to start on boot
+
+Some applications can be started on the boot of the system. For example, web servers, database servers, or file transfer servers. this software is often critical.
+
+In this example, we're going to be tell the system to boot the apache web server manually and boot apache2 on boot.
+
+To do this, we need to use the `systemctl` command. This command allows us to interact with the `systemd` process/daemon. `systemctl` uses the following formatting: `systemctl [option] [service]`.
+
+To start on boot we would do `systemctl start apache2`.
+To stop, we can do `systemctl stop apache`.
+
+There are four options we can do:
+- Start
+- Stop
+- Enable
+- Disable
+
+
+#### An introduction to backgroup and foregrounding in Linux
+
+Processes can run in two states: In the background and in the foreground. For example, running echo in the terminal would be classed as a foreground process. 
+
+To run a process in the background, we need to add the `&` operator like this:
+```
+root@linux3~# echo "Hi THM" &
+[1] 16889
+root@linux3:~# Hi THM
+```
+
+As you can see, when the command is run, we are given a process number as the command is run in the background. Once it's complete processing, the output of echo is printed to the terminal.
+
+This is great for copying files as it allows us to work on other things in the mean time.
+
+We can also do the same with scritps by using `ctrl + z` to background a process.
+
+
+#### Foregrounding a process
+
+Now that we know how to put a process into the background. we can confirm the process is running using the `ps aux` command. To then bring the process back to the foreground, we can use the `fg` command.
+
+-----
+
+### Task 6 - Maintaining your system: Automation
+
+Users may want to schedule an action or task to take place after the systems has booted. To do this, we are going to be looking at the `cron` process, more spacifically, how we can interact with it via `crontabs`. `crontab` is one of the processes started during boot which is responsible for facilitating and managing cron jobs.
+
+A crontab is a special file with formatting that is recognised by the `cron` process to execute each line. Crontab requires 6 specific values:
+```
+Value  |  Description
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+MIN    |  What minute to execute at
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+HOUR   |  What hour to execute at
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+DOM    |  What day of the month to execute at
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+MON    |  What month of the year to execute at
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+DOW    |  What day of the week to execute at
+- - - -|- - - - - - - - - - - - - - - - - - - - - - - - - -
+CMD    |  The actual command that will be executed
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+```
+
+Say you wanted to back up your files, specifically you wish to back up `Documents` inside of `cmnatic` every 12 hours. We would do the following:
+```
+0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+```
+
+When using crontabs, we can use the placeholder `*` for any information we don't want to provide. Say we don't care what day, we can use `*` in that field and it will ignore that time frame.
+
+There are some good `Crontab Generators` out there you can use.
+
+Crontabs can be edited by using `crontab -e` where you can selector the editor like Nano.
+
+
+-----
+
+### Task 7 - Maintaining your system: package management
+
+#### Introducing packages & software repos
+
+When developers wish to submit software to the community, they submit it to an `apt` repository. If approved, their programs and tools will be released. This is where two of Linux's features really shine: User accessibility and the merit of open source tools.
+
+Addition repositories can be added by using `apt-add-repository` command.
+
+
+### Managing your repositories (adding and removing)
+
+`apt` command is part of the package management. `apt` contains a whole suite of tools that allow us to manage the packages and sources of software.
+
+The benefits of using `apt` is that whenever we update our system, it checks for updates and does updates as its inside of the repository.
+
+
 
 
 -----
@@ -143,6 +285,88 @@ Answer = No answer needed
 Answer = THM{TEXT_EDITORS}
 
 -----
+
+### Task 4
+
+**q1.** Ensure you are connected to the deployed instance (MACHINE_IP)
+
+Answer = No answer needed
+
+
+**q2.** Now, use Python 3's "HTTPServer" module to start a web server in the home directory of the "tryhackme" user on the deployed instance.
+
+Answer = No answer needed
+
+
+**q3.** Download the file http://MACHINE_IP:8000/.flag.txt onto the TryHackMe AttackBox. Remember, you will need to do this in a new terminal.
+
+What are the contents?
+
+Answer = THM{WGET_WEBSERVER}
+
+
+**q4.** Create and download files to further apply your learning -- see how you can read the documentation on Python3's "HTTPServer" module. 
+
+Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.
+
+Answer = No answer needed
+
+-----
+
+### Task 5
+
+**q1.** Read me!
+
+Answer = No answer needed
+
+
+**q2.** If we were to launch a process where the previous ID was "300", what would the ID of this new process be?
+
+Answer = 301
+
+
+**q3.** If we wanted to cleanly kill a process, what signal would we send it?
+
+Answer = SIGTERM
+
+
+**q4.** Locate the process that is running on the deployed instance (MACHINE_IP). What flag is given?
+
+Answer = THM{PROCESSES}
+
+
+**q5.** What command would we use to stop the service "myservice"?
+
+Answer = systemctl stop myservice
+
+
+**q6.** What command would we use to start the same service on the boot-up of the system?
+
+Answer = systemctl enable myservice
+
+
+**q7.** What command would we use to bring a previously backgrounded process back to the foreground?
+
+Answer = fg
+
+-----
+
+### Task 6
+
+**q1.** Ensure you are connected to the deployed instance and look at the running crontabs.
+
+Answer = No answer needed
+
+
+**q2.** When will the crontab on the deployed instance (MACHINE_IP) run?
+
+Answer = @reboot
+
+-----
+
+### Task 7
+
+
 
 
 
