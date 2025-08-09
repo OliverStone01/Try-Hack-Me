@@ -4,7 +4,10 @@
 - Power-up your Linux skills and get hands-on with some common utilities that you are likely to use day-to-day!
 
 ## 🛠️ Tools Used
--
+- Nano
+- SCP
+- http.server
+- 
 
 ## 💬 Summary
 - Terminal text editors
@@ -248,10 +251,52 @@ Addition repositories can be added by using `apt-add-repository` command.
 
 `apt` command is part of the package management. `apt` contains a whole suite of tools that allow us to manage the packages and sources of software.
 
-The benefits of using `apt` is that whenever we update our system, it checks for updates and does updates as its inside of the repository.
+The benefits of using `apt` is that whenever we update our system, it checks for updates and does the updates as its inside of the same repository.
+
+In the following example, we are going to add the text editor `Sublime Text` to our Ubuntu machine. When adding software, the integrity of what we download is guaranteed by the use of what is called `GPG` (Gnu Privacy Guard) keys. These keys are essentially a safety check from the developers. If the keys do not match up to what your system trusts and what the developers used, then the software will not be downloaded.
+
+To start, we need to add the GPG key for the developers of `Subline Text 3`.
+
+1. Download the GPG key and use apt-key to trust it:
+```
+wget -q0 -https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+```
+
+2. Now we can add Sublime Text 3 repository to our apt sources list. A good practice is to have a seperate file for every different community/3rd party repository that we add.
+
+2.1. Create a file named `sublime-text.list` in `/etc/apt/source.list.d` and enter the repository information like this:
+```
+root@Linux3:/etc/apt/sources.list.d# touch sublime-text.ist
+```
+
+2.2. Now use Nano to add & save the Sublime Text 3 repository into the newly created file:
+```
+deb https://download.sublimetext.com/ apt/stable/
+```
+
+2.3. After adding this entry, we need to update apt to recognise this new entry - This is done using the `apt update` command.
+
+2.4. Once updated, we can proceed to install the software that we have trusted and added to apt using `apt install sublime-text`.
 
 
+To remove a package, we use `add-apt-repository --remove ppa:PPA_Name/ppa`. Once removed, we can use `apt remove [software-name-here]` i.e. `apt remove sumblime-text`.
 
+-----
+
+### Task 8 - Maintaining your system: logs
+
+Located in the `/var/log` directory, these files and folders contain logging information for applications and services running on your system. The operating system has become pretty good at automatically managing these logs in a process that is known as `rotating`.
+
+Some logs that are great at monitoring the health of your system and protecting it are:
+- apache2: web server
+- fail2ban.log: monitor attempted brute forces
+- ufw.log: used as a firewall
+
+The logs for services such as a web server contain information about every single request - allowing developers and administrators to diagnose performance issues or investigate an intruders activity. For example, the two types of log files below that are below are of interest:
+- Access log
+- error log
+
+These are logs that store information about how the OS is running itseld and actions that are performed by users, such as authentication attempts.
 
 -----
 
@@ -366,8 +411,42 @@ Answer = @reboot
 
 ### Task 7
 
+**q1.** Since TryHackMe instances do not have an internet connection...this task only requires you to read through the material.
+
+Answer = No answer needed
+
+-----
+
+### Task 8
+
+**q1.** Look for the apache2 logs on the deployable Linux machine
+
+Answer = No answer needed
 
 
+**q2.** What is the IP address of the user who visited the site?
+
+Answer = 10.9.232.111
+
+
+**q3.** What file did they access?
+
+Answer = catsanddogs.jpg
+
+-----
+
+### Task 9
+
+**q1.** Terminate the machine deployed in this room from task 2. 
+
+Answer = No answer needed
+
+
+**q2.** Continue your learning in other Linux-dedicated rooms
+
+Answer = No answer needed
+
+-----
 
 
 
