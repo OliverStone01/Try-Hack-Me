@@ -3,9 +3,6 @@
 ## 🎯 Objectives
 - In part 1 of the Windows Fundamentals module, we'll start our journey learning about the Windows desktop, the NTFS file system, UAC, the Control Panel, and more..
 
-## 🛠️ Tools Used
--
-
 ## 💬 Summary
 - Windows editions
 - The desktop (GUI)
@@ -207,10 +204,17 @@ On a Windows system, the primary location to make changes are the Settings menu 
 
 For a long time, the control panel has been the go-to location to make changes, such as adding a printer, uninstall a program, etc.
 
+The settings menu was introduced in Windows 8.
 
+Control panel is the menu where you will access more complex settings and perform more complex actions. In some cases, you will start in the settings tab and end up in the control panel.
 
+-----
 
+### Task 9 - Task manager
 
+Task manager provides information about the applications and processes currently running on the system. Other information is also available, such as how much `CPU` and `RAM` are being utilised which falls under `performance`.
+
+You can access task manager by right-clicking the taskbar or by doing `ctrl+shift+escape`.
 
 -----
 
@@ -297,7 +301,27 @@ Answer = User Account Control
 
 -----
 
+### Task 8
 
+**q1.** In the Control Panel, change the view to Small icons. What is the last setting in the Control Panel view?
+
+Answer = Windows Defender Firewall
+
+-----
+
+### Task 9
+
+**q1.** What is the keyboard shortcut to open Task Manager?
+
+Answer = Ctrl+Shift+Esc
+
+-----
+
+### Task 10
+
+**q1.** Read above and terminate the Windows machine you deployed in this room.
+
+Answer = No answer needed
 
 
 
