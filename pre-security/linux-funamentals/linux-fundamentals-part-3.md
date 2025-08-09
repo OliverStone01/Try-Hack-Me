@@ -7,7 +7,6 @@
 - Nano
 - SCP
 - http.server
-- 
 
 ## 💬 Summary
 - Terminal text editors
