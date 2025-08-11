@@ -96,7 +96,7 @@ Use the website to build requests to make DNS queries.
 
 ### Task 1
 
-q1. What does DNS stand for?
+**q1.** What does DNS stand for?
 
 Answer = Domain Name System
 
@@ -104,19 +104,22 @@ Answer = Domain Name System
 
 ### Task 2
 
-q1. What is the maximum length of a subdomain?
+**q1.** What is the maximum length of a subdomain?
 
 Answer = 63
 
-q2. Which of the following characters cannot be used in a subdomain ( 3 b _ - )?
+
+**q2.** Which of the following characters cannot be used in a subdomain ( 3 b _ - )?
 
 Answer = _
 
-q3. What is the maximum length of a domain name?
+
+**q3.** What is the maximum length of a domain name?
 
 Answer = 253
 
-q4. What type of TLD is .co.uk?
+
+**q4.** What type of TLD is .co.uk?
 
 Answer = ccTLD
 
@@ -124,57 +127,57 @@ Answer = ccTLD
 
 ### Task 3
 
-q1. What type of record would be used to advise where to send email?
+**q1.** What type of record would be used to advise where to send email?
 
 Answer = MX
 
-q2. What type of record handles IPv6 addresses?
+
+**q2.** What type of record handles IPv6 addresses?
 
 Answer = AAAA
+
 
 -----
 
 ### Task 4
 
-q1. What field specifies how long a DNS record should be cached for?
+**q1.** What field specifies how long a DNS record should be cached for?
 
 Answer = TTL
 
-q2. What type of DNS Server is usually provided by your ISP?
+
+**q2.** What type of DNS Server is usually provided by your ISP?
 
 Answer = recursive
 
-q3. What type of server holds all the records for a domain?
+
+**q3.** What type of server holds all the records for a domain?
 
 Answer = authoritative
+
 
 -----
 
 ### Task 5
 
-q1. What is the CNAME of shop.website.thm?
+**q1.** What is the CNAME of shop.website.thm?
 
 Answer = shops.myshopify.com
 
-q2. What is the value of the TXT record of website.thm?
+
+**q2.** What is the value of the TXT record of website.thm?
 
 Answer = THM{7012BBA60997F35A9516C2E16D2944FF}
 
-q3. What is the numerical priority value for the MX record?
+
+**q3.** What is the numerical priority value for the MX record?
 
 Answer = 30
 
-q4. What is the IP address for the A record of www.website.thm?
+
+**q4.** What is the IP address for the A record of www.website.thm?
 
 Answer = 10.10.10.10
 
+
 -----
-
-
-
-
-
-
-
-
-
