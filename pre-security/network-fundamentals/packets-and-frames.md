@@ -10,6 +10,7 @@
 - Closing a TCP connection
 - UDP/IP
 - Ports 101
+- 
 -----
 
 ## Notes
@@ -324,10 +325,6 @@ q1. What is the flag received from the challenge?
 Answer = THM{YOU_CONNECTED_TO_A_PORT}
 
 -----
-
-
-
-
 
 
 
