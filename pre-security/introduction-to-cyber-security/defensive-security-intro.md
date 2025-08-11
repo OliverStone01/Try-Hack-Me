@@ -19,7 +19,7 @@
 
 ## Notes:
 
-#### Task 1:
+### Task 1:
 
 Defensive security (**Blue Team**) is concerned with two main tasks:
 1. Preventing intrusions from occurring.
@@ -45,7 +45,7 @@ We will also look at:
 
 -----
 
-#### Task 2:
+### Task 2:
 
 **Security Operations Center (SOC):**  
 A team of cybersecurity professionals that monitors the network and it's systems to detect malicious cybersecurity events.
@@ -138,7 +138,7 @@ Malware analysis use different means to learn about malicious programs:
 
 -----
 
-#### Task 3
+### Task 3
 
 **The Scenario**
 Pretend you are a SOC analyst responsible for protecting a bank. The bank's SOC uses a SIEM tool.
@@ -186,32 +186,36 @@ Now we have permission to block the malicious IP on the firewall using a block l
 
 ## Questions and Answers
 
-Task 1:
+### Task 1:
 
-1. Which team focuses on defensive security?
+**q1.** Which team focuses on defensive security?
 
 Answer: Blue Team
 
 -----
 
-Task 2:
+### Task 2:
 
-1. What would you call a team of cyber security professionals that monitors a network and its systems for malicious events?
+**q1.** What would you call a team of cyber security professionals that monitors a network and its systems for malicious events?
 
 Answer = Security Operations Center
 
-2. What does DFIR stand for?
+
+**q2.** What does DFIR stand for?
 
 Answer = Digital Forensics and Incident Response
 
-3. Which kind of malware requires the user to pay money to regain access to their files?
+
+**q3.** Which kind of malware requires the user to pay money to regain access to their files?
 
 Answer = Ransomware
 
 -----
 
-Task 3:
+### Task 3:
 
-What is the flag that you obtained by following along?
+**q1.** What is the flag that you obtained by following along?
 
 Answer = THM{THREAT-BLOCKED}
+
+-----
