@@ -17,7 +17,7 @@
 -----
 ## Notes
 
-#### Task 1 - What is Networking?
+### Task 1 - What is Networking?
 
 Networks are things connected.
 
@@ -32,7 +32,7 @@ Networks are integrated into our everyday lives, from gathering weather data to 
 
 -----
 
-#### Task 2 - What is the internet?
+### Task 2 - What is the internet?
 
 The internet is one giant network that consists of many small networks.
 
@@ -50,7 +50,7 @@ These smaller networks that make up the internet are called `private networks`. 
 
 -----
 
-#### Task 3 - Identifying devices on a network
+### Task 3 - Identifying devices on a network
 
 For devices to communicate and maintain order, devices must be able to identify and be identifiable on a network.
 
@@ -121,7 +121,7 @@ The interactive lab simulates a hotel WI-FI network where you have to pay for th
 
 -----
 
-#### Task 4 - Ping(ICMP)
+### Task 4 - Ping(ICMP)
 
 Ping is one of the most fundamental network tools available. Ping uses `ICMP` packets to determine the performance of a connection between devices.
 
@@ -143,7 +143,7 @@ Using the deployable website, I had to ping the IP address `8.8.8.8`.
 
 ## Questions and Answers
 
-#### Task 1
+### Task 1
 
 What is the key term for devices that are connected together?
 
@@ -151,7 +151,7 @@ Answer = Network
 
 -----
 
-#### Task 2
+### Task 2
 
 Who invented the World Wide Web?
 
@@ -159,7 +159,7 @@ Answer = Tim Berners-Lee
 
 -----
 
-#### Task 3
+### Task 3
 
 q1. What does the term `IP` stand for?
 
@@ -183,7 +183,7 @@ Answer = THM{YOU_GOT_ON_TRYHACKME}
 
 -----
 
-#### Task 4
+### Task 4
 
 q1. What protocol does ping use?
 
