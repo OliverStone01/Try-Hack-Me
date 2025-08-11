@@ -3,9 +3,6 @@
 ## 🎯 Objectives
 - Understand how data is divided into smaller pieces and transmitted across a network to another device.
 
-## 🛠️ Tools Used
--
-
 ## 💬 Summary
 - What are packets and frames
 - TCP/IP
@@ -327,10 +324,6 @@ q1. What is the flag received from the challenge?
 Answer = THM{YOU_CONNECTED_TO_A_PORT}
 
 -----
-
-
-
-
 
 
 
