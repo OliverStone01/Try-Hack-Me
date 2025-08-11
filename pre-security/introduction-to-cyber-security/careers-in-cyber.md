@@ -3,15 +3,12 @@
 ## 🎯 Objectives
 - Learn about different careers in cyber.
 
-## 🛠️ Tools Used
-- None
-
 ## 💬 Summary
 - Looked at the most common careers in cybersecurity.
 
 -----
 
-#### Task 1 - Introduction
+### Task 1 - Introduction
 There are many different jobs within the security industry, from offensive to defensive.
 
 Why get a career in cyber:
@@ -21,7 +18,7 @@ Why get a career in cyber:
 
 -----
 
-#### Task 2 - Security Analyst
+### Task 2 - Security Analyst
 
 Security Analysts are responsible for maintaining the security of an organisation’s data and preventing attacks. They explore and evaluate the network to find vulnerabilities and give recommendations to engineers.
 
@@ -32,7 +29,7 @@ Security Analysts are responsible for maintaining the security of an organisatio
 
 -----
 
-#### Task 3 - Security Engineer
+### Task 3 - Security Engineer
 
 Security Engineers design, monitor, and maintain security controls, networks, and systems to help prevent cyber attacks.
 
@@ -43,7 +40,7 @@ Security Engineers design, monitor, and maintain security controls, networks, an
 
 -----
 
-#### Task 4 - Incident Responder
+### Task 4 - Incident Responder
 
 Identifies and mitigates attacks while attacks are still unfolding. This includes creating plans, policies, and protocols. This is often a high-pressure position. 
 
@@ -54,7 +51,7 @@ Identifies and mitigates attacks while attacks are still unfolding. This include
 
 -----
 
-#### Task 5 - Digital Forensics Examiner
+### Task 5 - Digital Forensics Examiner
 
 Responsible for using digital forensics to investigate incidents and crimes.
 
@@ -65,7 +62,7 @@ Responsible for using digital forensics to investigate incidents and crimes.
 
 -----
 
-#### Task 6 - Malware Analyst
+### Task 6 - Malware Analyst
 
 Analyses all types of malware to learn more about how they work and what they do.
 
@@ -76,7 +73,7 @@ Analyses all types of malware to learn more about how they work and what they do
 
 -----
 
-#### Task 7 - Penetration tester
+### Task 7 - Penetration tester
 
 Responsible for testing technology products for security loopholes.
 
@@ -87,7 +84,7 @@ Responsible for testing technology products for security loopholes.
 
 -----
 
-#### Task 8 - Red Teamer
+### Task 8 - Red Teamer
 
 Plays the role of an adversary, attacking an organisation and providing feedback from an enemy’s perspective.
 
