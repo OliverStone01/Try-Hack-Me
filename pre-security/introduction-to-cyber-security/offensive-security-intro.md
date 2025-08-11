@@ -14,7 +14,7 @@
 -----
 ## Notes
 
-#### Task1:
+### Task 1
 
 The core of "Offensive Security" is breaking into computer systems, exploiting software bugs, and finding loopholes in an application to gain unauthorised access.
 
@@ -22,7 +22,7 @@ The goal is to understand hacker tactics and improve system defence.
 
 -----
 
-#### Task2:
+### Task 2
 
 We use virtual machines to create simulated environments.
 
@@ -34,7 +34,7 @@ Once I loaded the bank, I could see information about a bank account. Question 2
 
 -----
 
-#### Task3:
+### Task 3
 
 Goal is to hack into the FakeBank application and steal money. All I have is a bank account.
 
@@ -78,7 +78,7 @@ Breakdown:
 
 -----
 
-#### Task4:
+### Task 4:
 
 Following the link found in Task 3, it took me to a service on the bank where I could add funds to an account by inputting the account number and amount to deposit.
 
@@ -87,27 +87,36 @@ Following the link found in Task 3, it took me to a service on the bank where I 
 -----
 
 ## Questions and Answers
-1. Which of the following options better represents the process where you simulate a hacker's actions to find vulnerabilities in a system?
+
+### Task 1
+
+**q1.** Which of the following options better represents the process where you simulate a hacker's actions to find vulnerabilities in a system?
 
 - Offensive security
 - Defensive security
 
-Answer: Offensive security
+Answer = Offensive security
 
 -----
 
-2. What is your bank account number in the FakeBank web application?
+### Task 2
 
-Answer: 8881
+**q1.** What is your bank account number in the FakeBank web application?
 
------
-
-3. Dirb should have found 2 hidden URLs. One of them is `http://fakebank.thm/images`. What is the other one?
-
-Answer: http://fakebank.thm/bank-deposit
+Answer = 8881
 
 -----
 
-4. If your balance is now positive, a pop-up should appear with some green words in it. Input the green words as the answer to this question (all in uppercase):
+### Task 3
 
-Answer: BANK-HACKED
+**q1.** Dirb should have found 2 hidden URLs. One of them is `http://fakebank.thm/images`. What is the other one?
+
+Answer = http://fakebank.thm/bank-deposit
+
+-----
+
+### Task 4
+
+**q1.** If your balance is now positive, a pop-up should appear with some green words in it. Input the green words as the answer to this question (all in uppercase):
+
+Answer = BANK-HACKED
