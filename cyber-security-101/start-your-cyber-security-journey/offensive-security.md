@@ -45,7 +45,7 @@ To find hidden URL's, we can use a tool called `dirb`. This tool `Brute-forces` 
 
 #### Using dirb to find Hidden website pages
 
-Using dirb is simple. Using the terminal, write the following command fillowed by the website you want to check.
+Using dirb is simple. Using the terminal, write the following command followed by the website you want to check.
 ```
 dirb http://fakebank.thm
 ```
@@ -91,3 +91,36 @@ You should have found a secret page that allows you to add funds to a bank accou
 -----
 
 ## Questions and Answers
+
+
+### Task 1
+
+**q1.** Which of the following options better represents the process where you simulate a hacker's actions to find vulnerabilities in a system?
+
+**Answer =** Offensive Security
+
+------
+
+### Task 2
+
+**q1.** What is your bank account number in the FakeBank web application?
+
+**Answer =** 8881
+
+-----
+
+### Task 3
+
+**q1.** Dirb should have found 2 hidden URLs. One of them is http://fakebank.thm/images. What is the other one?
+
+**Answer =** http://fakebank.thm/bank-deposit
+
+-----
+
+### Task 4
+
+**q1.** If your balance is now positive, a pop-up should appear with some green words in it. Input the green words as the answer to this question (all in uppercase).
+
+**Answer =** BANK-HACKED
+
+-----
