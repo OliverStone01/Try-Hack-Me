@@ -7,13 +7,10 @@
 - IP scanner
 
 ## 💬 Summary
-- Defensive security
-- Security Operations Center (SOC)
-- Threat intelligence
-- Digital Forensics and incident response (DFIR)
-- Incident Response
-- Malware Analysis
-- Simulating a SIEM
+- Defence teams are known as Blue team.
+- Defending a system envolves preventing intrusions and detect intrusions when they do happen. To do this, we can train users of the system, document and manage assets to be able to protect them, update systems to prevent known vulnerabilities, setting up prevention methods like firewalls, and setting up logging and monitoring software.
+- A SOC team is a group of cyber security professionals that monitor the network and systems to detect malicious activity.
+- 
 
 -----
 
