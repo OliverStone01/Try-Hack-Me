@@ -1,20 +1,19 @@
-# 🚪 Room: Offensive Security Intro
+## 🚪 Room: Offensive Security Intro
 
-## 🎯 Objectives
+### 🎯 Objectives
 - Hack your first website (legally in a safe environment) and experience an ethical hacker's job.
 
-## 🛠️ Tools Used
+### 🛠️ Tools Used
 - Virtual machines
 - `DirB` = brute-forces URLs by taking a list of potential page names and testing to see if they exist.
 
-## 💬 Summary
-- Used `DirB` to brute-force a bank application to see what hidden pages the bank had on its site.
-- Used the link to add funds to the bank account.
+### 💬 Summary
+- I Used `DirB` to brute-force a fake bank application to see what hidden pages the bank had on its site.
+- Used the links found by `DirB` to add funds to the fake bank account.
 
------
-## Notes
+### 📝 Notes
 
-### Task 1
+#### Task 1
 
 The core of "Offensive Security" is breaking into computer systems, exploiting software bugs, and finding loopholes in an application to gain unauthorised access.
 
@@ -22,7 +21,7 @@ The goal is to understand hacker tactics and improve system defence.
 
 -----
 
-### Task 2
+#### Task 2
 
 We use virtual machines to create simulated environments.
 
@@ -36,9 +35,9 @@ Once I loaded the bank, I could see information about a bank account. Question 2
 
 ### Task 3
 
-Goal is to hack into the FakeBank application and steal money. All I have is a bank account.
+Goal is to hack into the `FakeBank` application and add money to my accound. All I have is a bank account.
 
-Need to find hidden features in the application. To do this, we are using a tool called `DirB`.
+I Needed to find hidden features in the application. To do this, I used a tool called `DirB`.
 
 `DirB` brute-forces URLs by taking a list of potential page names and testing to see if they exist.
 
