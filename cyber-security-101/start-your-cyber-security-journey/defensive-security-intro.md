@@ -25,7 +25,7 @@ Blue teams are part of the defensive security landscape.
 
 Some of the tasks that are related to defensive security include:
 - User cycle security awarenesstry: Training users about cyber security helps protect against attacks targetting their systems.
-- Documenting and managing assets: We need to know the systems and devices we must manage and protext adequately.
+- Documenting and managing assets: knowing and understanding the systems and devices we must manage and protect.
 - Updating and patching systems: Ensuring that computers, servers, and network devices are correctly updated and patched against any known vulnerability (weakness).
 - Setting up preventative security devices: Firewall and intrusion prevention systems (IPS) are critical components of preventative security. Firewalls control what network traffic can go inside and what can leave the system or network. IPS blocks any network traffic that matches present rules and attack signatures.
 - Setting up logging and monitoring devices: Proper network logging and monitoring are essential for detecting malicious activity and intrusions. If a new unauthorised device appears on our network, we should be able to detect it.
@@ -64,6 +64,18 @@ intelligence needs data. Data has to be collected, processed, and analysed. Data
 Learning about your attackers lets you know their tactics, techniques, and procesures. As a result of intelligencem we indentify the threat actor and predict their activity.
 
 
+### Digital forensics and incident response (DFIR)
+
+#### Digital Forensics
+
+Forensics is the application of science to investigate crimes and establish facts. With the use and spread of digital system such as computers and smartphones, a new brance of forensics was born to investigate related crimes: computer forensics, which later evolved into digital forensics.
+
+In defensive securitym 
+
+
+-----
+
+### Task
 
 -----
 
