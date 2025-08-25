@@ -25,3 +25,13 @@
 
 
 #### Learning Milestones
+
+<img alt="First Four Badge" src="/all-badges/first-four.jpeg">
+
+<img alt="Three Day Streak Badge" src="/all-badges/three-day-streak.jpeg">
+
+<img alt="Seven Day Streak Badge" src="/all-badges/seven-day-streak.jpeg">
+
+<img alt="Thirty Day Streak Badge" src="/all-badges/thirty-day-streak.jpeg">
+
+
