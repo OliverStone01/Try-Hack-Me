@@ -3,7 +3,7 @@
 - 📈 Top 4% rank
 - 🎖️ 24 Badges complete
 - 🚪 116 rooms complete
-- 📆 68 day streak
+- 📆 70 day streak
 
 
 ### Badges
