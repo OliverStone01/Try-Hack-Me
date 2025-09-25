@@ -1,9 +1,9 @@
 # 👾 Try-Hack-Me
 
 - 📈 Top 4% rank
-- 🎖️ 25 Badges complete
-- 🚪 121 rooms complete
-- 📆 85 day streak
+- 🎖️ 27 Badges complete
+- 🚪 123 rooms complete
+- 📆 100 day streak
 
 
 ### Badges
