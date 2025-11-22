@@ -2,8 +2,8 @@
 
 - 📈 Top 3% rank
 - 🎖️ 27 Badges complete
-- 🚪 127 rooms complete
-- 📆 144 day streak
+- 🚪 128 rooms complete
+- 📆 155 day streak
 
 
 ### Badges
