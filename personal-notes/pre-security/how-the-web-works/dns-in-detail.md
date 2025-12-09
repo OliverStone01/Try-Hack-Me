@@ -1,4 +1,4 @@
-# 🚪 Room: DNS in Detail
+e# 🚪 Room: DNS in Detail
 
 ## 🎯 Objectives
 - Learn how DNS works and how it helps you access internet services.
@@ -57,7 +57,7 @@ In `Tryhackme.com` the `Tryhackme` part is what is known as the second-level dom
 
 #### Subdomain
 
-A subdomain sits on the left-hand side of the second-level domain using a period to separate the two. For example, in `admin.tryhackme.com` the `admin` is a subdomain. A subdomain has the same restrictions in length as a second-level domain. You can also have as many subdomains as you wish, as long as the total length is less than 253 characters.
+A subdomain sits on the left-hand side of the second-level domain using a period to separate the two. For example, in `admin.tryhackme.com` the `admin` is a subdomain. A subdomain has the same restrictions in length as a second-level domain. You can also have as many subdomains as you wish, as long as the total length of the domain is less than 253 characters.
 
 -----
 
