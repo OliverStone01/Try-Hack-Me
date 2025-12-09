@@ -77,7 +77,7 @@ DNS isn't just for websites. There are actually multiple types of DNS records th
 
 1. When you request a domain name, your computer checks if it's in its local cache to see if you have previously searched for the address. If not, a request is made to your Recursive DNS Server.
 
-2. A recursive DNS server is usually provided by your Internet Service Provider (ISP). This server also has a cache of recently looked-up domain names. If the address is found locally, then it is sent back to your computer. Otherwise, a journey begins to find the correct answer, starting with the internet's root DNS servers.
+2. A recursive DNS server is provided by your Internet Service Provider (ISP). This server also has a cache of recently looked-up domain names. If the address is found locally, then it is sent back to your computer. Otherwise, a journey begins to find the correct answer, starting with the internet's root DNS servers.
 
 3. The root servers act as the DNS backbone of the internet. Their job is to redirect you to the correct Top Level domain server, depending on your request.
 
