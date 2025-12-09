@@ -15,7 +15,7 @@
 
 `DNS` = Domain Name System
 
-DNS provides a simple way for us to communicate with devices on the internet without needing to remember complex numbers. Much like a house has a unique address for sending mail directly to it, every computer on the internet has its own unique address. This is called an `IP address`.
+DNS provides a simple way for us to communicate with devices on the internet without needing to remember complex IP addresses. Much like how a house has a unique address for sending mail directly to it, every computer on the internet has its own unique address. This is called an `IP address`.
 
 An IP address is made up of four octets ranging from `0-255`, which looks like this:
 ```
