@@ -83,7 +83,7 @@ DNS isn't just for websites. There are actually multiple types of DNS records th
 
 4. The TLD server holds records for where to find the authoritative server to answer the DNS request.
 
-5. An authoritative DNS server is responsible for storing the DNS records. This is where any changes to your domain would be made. The address is then sent all the way back through all the servers with a TTL (Time to live) factor. This means you will need to repeat the process once the timer has run out.
+5. An authoritative DNS server is responsible for storing the DNS records. This is where any changes to your domain would be made. The address is then sent all the way back through all the servers with a TTL (Time to live) factor. If the timer runs out, you will need to restart the request again.
 
 -----
 
