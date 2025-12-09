@@ -17,11 +17,11 @@
 
 DNS provides a simple way for us to communicate with devices on the internet without needing to remember complex IP addresses. Much like how a house has a unique address for sending mail directly to it, every computer on the internet has its own unique address. This is called an `IP address`.
 
-An IP address is made up of four octets ranging from `0-255`, which looks like this:
+An IP address is made up of four octets ranging from `0-255`:
 ```
 104.26.10.229
 ```
-What a DNS does is set a name to this IP address, so instead of needing to remember the numbers, you can remember `google.com` as an example instead.
+DNS sets a name to the IP address, so instead of needing to remember 8.8.8.8, you can remember `google.com` instead.
 
 -----
 
