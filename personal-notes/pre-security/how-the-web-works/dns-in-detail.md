@@ -53,7 +53,7 @@ Because there is such a demand, there are now over 2000 TLDs [you can check out 
 
 #### Second-level Domain
 
-In `Tryhackme.com` the `Tryhackme` part is what is known as the second-level domain. the second-level domain is limited to 63 characters + TLD. You can use a-z, 0-9, and hyphens (cannot start or end with hyphens).
+In `Tryhackme.com` the `Tryhackme` part is what is known as the second-level domain. the second-level domain is limited to 63 characters in length + the TLD. You can use a-z, 0-9, and hyphens (cannot start or end with hyphens).
 
 #### Subdomain
 
