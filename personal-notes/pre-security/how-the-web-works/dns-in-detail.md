@@ -41,7 +41,9 @@ Second-Level Domain      Top-Level Domain      Root Domain
 
 `TLD` = Top-Level Domain
 
-A TLD is the `.com` part of `Tryhackme.com`. There are two types of TLD:
+The TLD is the `.com` part of a site. For example, `Tryhackme.com`.  
+
+There are two types of TLD:
 - gTLD = Generic Top Level
 - ccTLD = Country Code Top Level
 
