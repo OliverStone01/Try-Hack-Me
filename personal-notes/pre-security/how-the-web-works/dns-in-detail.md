@@ -65,11 +65,11 @@ A subdomain sits on the left-hand side of the second-level domain using a period
 
 DNS isn't just for websites. There are actually multiple types of DNS records that exist.
 
-- A Record: These records resolve to IPv4.
-- AAAA Record: These records resolve to IPv6.
-- CNAME Record: Resolves to another domain name.
-- MX Record: Resolves to the address of the server that handles the email for the domain you are querying.
-- TXT Record: free text fields where any text-based data can be stored.
+- **A Record:** These records resolve to IPv4.
+- **AAAA Record:** These records resolve to IPv6.
+- **CNAME Record:** Resolves to another domain name.
+- **MX Record:** Resolves to the address of the server that handles the email for the domain you are querying.
+- **TXT Record:** free text fields where any text-based data can be stored.
 
 -----
 
