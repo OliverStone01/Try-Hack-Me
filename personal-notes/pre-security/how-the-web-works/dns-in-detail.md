@@ -89,7 +89,7 @@ DNS isn't just for websites. There are actually multiple types of DNS records th
 
 ### Task 5 - Practice
 
-Use the website to build requests to make DNS queries.
+I had to start the task and make requests to make DNS queries.
 
 
 -----
