@@ -15,7 +15,7 @@
 ## Notes
 
 ### Task 1 - How websites work
-When you visit a website, your browser makes a request to a web server asking for information about the page you are visiting. The server will respond with the data that your browser needs to display the page.
+When you visit a website, your browser makes a request to a web server asking for information about the page you are trying to visiting. The server will respond with the data that your browser needs to display the page.
 ```
         -> Request from browser ->        -> Request from browser ->
 [Browser]                        [Internet]                      [server]
