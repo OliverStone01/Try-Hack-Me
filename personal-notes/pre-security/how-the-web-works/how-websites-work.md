@@ -61,7 +61,7 @@ The HTML above has the following components:
 - `<h1>` - This tag defines a large heading.
 - `<p>` - This tag defines a paragraph.
 
-tags can contain attributes such as the `class` attribute which can be used to style an element. An element can have multiple attributes each with its own unique purpose.
+Tags can contain attributes such as the `class` attribute which can be used to style an element. An element can have multiple attributes each with its own unique purpose.
 
 Elements can also have an id attribute `<p id="example">`. Elements must have a unique id. Id's are used for styling and to identify the element by JavaScript.
 
@@ -71,16 +71,16 @@ You can view the HTML of any site by right-clicking and selecting `view page sou
 
 ### Task 3 - JavaScript
 
-JavaScript is one of the most popular coding languages. It allows pages to become interactive. JavaScript is used to control the functionality of the web page. 
+JavaScript is one of the most popular coding languages. It allows pages to become interactive and is used to control the functionality of the web page. 
 
 JavaScript is added within the page source code and can be either loaded with `<script>` tags or can be included remotely with the src attribute: `<script src="/location/of/javascript_file.js"></script>`
 
-The following JavaScript code finds a HTML element on the page with the id of `demo` and changes the element's contents to "hack the planet":
+The following JavaScript code finds a HTML element on the page with the ID of `demo` and changes the element's contents to "hack the planet":
 ```
 document.getElementById("demo").innerHTML = "Hack the planet";
 ```
 
-HTML elements can also have events, such as `onclick` or `onhover` that executes JavaScript when the event occurs. The following code changes the text of the element with the demo id to button clicked:
+HTML elements can also have events, such as `onclick` or `onhover` that executes JavaScript when the event occurs. The following code changes the text of the element with the `demo` ID to button clicked:
 ```
 <button onclick='document.getElementById("demo").innerHTML = "Button Clicked";'>Click Me!</button>
 ```
