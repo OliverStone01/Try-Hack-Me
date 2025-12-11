@@ -54,12 +54,12 @@ Here is an example of some HTML:
 ```
 
 The HTML above has the following components:
-- `<!DOCTYPE html>` defines that the page is HTML5 document. This helps with standardisation across different browsers.
-- `<html>` is the root element of the of the HTML page. All other elements come after this element.
-- `<head>` element contains information about the page such as the title.
-- `<body>` defines the HTML document's body. Only content inside of the body will show in the browser.
-- `<h1>` tag defines a large heading.
-- `<p>` tag defines a paragraph.
+- `<!DOCTYPE html>` - defines that the page is HTML5 document. This helps with standardisation across different browsers.
+- `<html>` - This is the root element of the of the HTML page. All other elements come after this element.
+- `<head>` - This element contains information about the page such as the sites title.
+- `<body>` - Defines the HTML document's body. Only content inside of the body will show in the browser.
+- `<h1>` - This tag defines a large heading.
+- `<p>` - This tag defines a paragraph.
 
 tags can contain attributes such as the `class` attribute which can be used to style an element. An element can have multiple attributes each with its own unique purpose.
 
