@@ -39,7 +39,7 @@ HTML = HyperText Markup Language
 
 HTML is the language in which websites are written in. Elements (also known as tags) are the building blocks of HTML and they tell the browser how to display content.
 
-Here is a little snipped of simple HTML:
+Here is an example of some HTML:
 ```
 <!DOCTYPE html>
 <html>
