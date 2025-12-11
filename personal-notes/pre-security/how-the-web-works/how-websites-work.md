@@ -10,7 +10,7 @@
 - Sensitive Data Exposure
 - HTML Injection
 
------
+---
 
 ## Notes
 
