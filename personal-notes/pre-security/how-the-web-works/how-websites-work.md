@@ -31,9 +31,9 @@ There are two major components that make up a website:
 ### Task 2 - HTML
 
 Websites are primarily created using the following:
-- HTML to build websites and define their structures
-- CSS to make websites look pretty by adding styling options
-- JavaScript to implement complex features on pages using interactivity
+- **HTML** - Used to build the website structure and elements.
+- **CSS** - Used to add styling to the site like background colours and other element styles.
+- **JavaScript** - Used to implement iteractive elements and add funtionality to the website.
 
 HTML = HyperText Markup Language
 
