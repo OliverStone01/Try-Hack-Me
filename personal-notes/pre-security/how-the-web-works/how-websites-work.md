@@ -23,8 +23,8 @@ When you visit a website, your browser makes a request to a web server asking fo
 ```
 
 There are two major components that make up a website:
-- Front end (Client-side) - the way your browser renders a website
-- Back end (Server-side) - processes your request and returns a response.
+- **Front end (Client-side)** - the way your browser renders a website
+- **Back end (Server-side)** - processes your request and returns a response.
 
 -----
 
