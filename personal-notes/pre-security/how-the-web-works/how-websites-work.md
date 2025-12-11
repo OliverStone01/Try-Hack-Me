@@ -101,12 +101,11 @@ Whenever you're assessing a web application for security issues, one of the firs
 
 ### Task 5 - HTML Injection
 
-HTML injection is a vulnerability that that occurs when unfiltered user input is displayed or used for the functionality on the page. If a website fails to sanitise user input (filter any "malicious" text that a user inputs), and that input is used on the page, an attacker can inject HTML code into a vulnerable site.
+HTML injection is a vulnerability that that occurs when unfiltered user input is displayed or used for the functionality on the page. If a website fails to sanitise user input (filter any malicious text that a user inputs) and that input is used on the page, an attacker can inject malicious HTML code into a vulnerable site.
 
-Input sanitisation is very important in keeping a website secure, as information a user inputs into a website is often used in other frontend and backend functionality. Another vulnerability we will look at later is database injection, where we can manipulate a database lookup query to log in as another user by controlling the input that's directly used in the query - but for now, let's focus on HTML injection (which is client-side).
+Input sanitisation is very important in keeping a website secure as information a user inputs into a website is often used in other frontend and backend functionality. Another vulnerability we will look at later is database injection, where we can manipulate a database lookup query to log in as another user by controlling the input that's directly used in the query - but for now, let's focus on HTML injection (which is client-side).
 
-The general rule is never to trust user input.
-
+The general rule is never to trust the users input.
 
 -----
 
